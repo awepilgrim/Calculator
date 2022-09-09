@@ -15,6 +15,8 @@
 		4385591728CBA83800CFCC71 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385591628CBA83800CFCC71 /* CalculatorTests.swift */; };
 		4385592128CBA83800CFCC71 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385592028CBA83800CFCC71 /* CalculatorUITests.swift */; };
 		4385592328CBA83800CFCC71 /* CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385592228CBA83800CFCC71 /* CalculatorUITestsLaunchTests.swift */; };
+		4385593428CBB95200CFCC71 /* CalcService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385593328CBB95200CFCC71 /* CalcService.swift */; };
+		4385593628CBBA5700CFCC71 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385593528CBBA5700CFCC71 /* Operations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4385591C28CBA83800CFCC71 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4385592028CBA83800CFCC71 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		4385592228CBA83800CFCC71 /* CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4385593328CBB95200CFCC71 /* CalcService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcService.swift; sourceTree = "<group>"; };
+		4385593528CBBA5700CFCC71 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,10 @@
 		438558FE28CBA83700CFCC71 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				438558FF28CBA83700CFCC71 /* AppDelegate.swift */,
-				4385590128CBA83700CFCC71 /* SceneDelegate.swift */,
-				4385590328CBA83700CFCC71 /* ViewController.swift */,
+				4385592F28CBB86000CFCC71 /* App */,
+				4385593028CBB86E00CFCC71 /* Model */,
+				4385593128CBB8AA00CFCC71 /* ViewController */,
 				4385590828CBA83700CFCC71 /* Assets.xcassets */,
-				4385590A28CBA83700CFCC71 /* LaunchScreen.storyboard */,
 				4385590D28CBA83700CFCC71 /* Info.plist */,
 			);
 			path = Calculator;
@@ -122,6 +125,41 @@
 				4385592228CBA83800CFCC71 /* CalculatorUITestsLaunchTests.swift */,
 			);
 			path = CalculatorUITests;
+			sourceTree = "<group>";
+		};
+		4385592F28CBB86000CFCC71 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				438558FF28CBA83700CFCC71 /* AppDelegate.swift */,
+				4385590128CBA83700CFCC71 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4385593028CBB86E00CFCC71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4385593328CBB95200CFCC71 /* CalcService.swift */,
+				4385593528CBBA5700CFCC71 /* Operations.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4385593128CBB8AA00CFCC71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4385593228CBB8CC00CFCC71 /* MainView */,
+				4385590A28CBA83700CFCC71 /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4385593228CBB8CC00CFCC71 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				4385590328CBA83700CFCC71 /* ViewController.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4385593428CBB95200CFCC71 /* CalcService.swift in Sources */,
 				4385590428CBA83700CFCC71 /* ViewController.swift in Sources */,
 				4385590028CBA83700CFCC71 /* AppDelegate.swift in Sources */,
 				4385590228CBA83700CFCC71 /* SceneDelegate.swift in Sources */,
+				4385593628CBBA5700CFCC71 /* Operations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
